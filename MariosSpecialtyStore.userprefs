@@ -1,11 +1,16 @@
 ﻿<Properties StartupConfiguration="{644D35EA-C167-4F63-B5BA-EAE0EE9AC639}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="MariosSpecialtyStore.Tests/ControllerTests/ProductsControllerTest.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MariosSpecialtyStore/Models/Repositories/EFProductRepository.cs">
     <Files>
-      <File FileName="MariosSpecialtyStore/Models/Product.cs" Line="23" Column="10" />
-      <File FileName="MariosSpecialtyStore/Models/Review.cs" Line="29" Column="34" />
+      <File FileName="MariosSpecialtyStore/Models/Product.cs" Line="36" Column="10" />
+      <File FileName="MariosSpecialtyStore/Models/Review.cs" Line="18" Column="19" />
       <File FileName="MariosSpecialtyStore.Tests/ModelTests/ProductTest.cs" Line="36" Column="1" />
       <File FileName="MariosSpecialtyStore.Tests/ModelTests/ReviewTest.cs" Line="35" Column="2" />
-      <File FileName="MariosSpecialtyStore.Tests/ControllerTests/ProductsControllerTest.cs" Line="11" Column="1" />
+      <File FileName="MariosSpecialtyStore.Tests/ControllerTests/ProductsControllerTest.cs" Line="46" Column="9" />
+      <File FileName="MariosSpecialtyStore.Tests/Models/TestDbContext.cs" Line="4" Column="31" />
+      <File FileName="MariosSpecialtyStore/Startup.cs" Line="33" Column="30" />
+      <File FileName="MariosSpecialtyStore/Models/MariosSpecialtyStoreContext.cs" Line="16" Column="1" />
+      <File FileName="MariosSpecialtyStore.Tests/ControllerTests/ReviewsControllerTest.cs" Line="128" Column="29" />
+      <File FileName="MariosSpecialtyStore/Models/Repositories/EFProductRepository.cs" Line="53" Column="27" />
     </Files>
     <Pads>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
@@ -13,9 +18,10 @@
           <Node name="MariosSpecialtyStore" expanded="True">
             <Node name="MariosSpecialtyStore.Tests" expanded="True">
               <Node name="MariosSpecialtyStore" expanded="True">
-                <Node name="Tests" expanded="True" selected="True">
-                  <Node name="ProductTest" expanded="True" />
-                  <Node name="ReviewTest" expanded="True" />
+                <Node name="Tests" expanded="True">
+                  <Node name="ControllerTests" expanded="True">
+                    <Node name="ReviewsControllerTest" expanded="True" selected="True" />
+                  </Node>
                 </Node>
               </Node>
             </Node>

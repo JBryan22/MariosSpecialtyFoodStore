@@ -9,7 +9,7 @@
 /Users/Guest/Projects/MariosSpecialtyStore/MariosSpecialtyStore.Tests/bin/Debug/netcoreapp1.1/MariosSpecialtyStore.dll
 /Users/Guest/Projects/MariosSpecialtyStore/MariosSpecialtyStore.Tests/bin/Debug/netcoreapp1.1/MariosSpecialtyStore.pdb
 /Users/Guest/Projects/MariosSpecialtyStore/MariosSpecialtyStore.Tests/obj/Debug/netcoreapp1.1/MariosSpecialtyStore.Tests.csprojResolveAssemblyReference.cache
-/Users/Guest/Projects/MariosSpecialtyStore/MariosSpecialtyStore.Tests/obj/Debug/netcoreapp1.1/MariosSpecialtyStore.Tests.csproj.CoreCompileInputs.cache
 /Users/Guest/Projects/MariosSpecialtyStore/MariosSpecialtyStore.Tests/obj/Debug/netcoreapp1.1/MariosSpecialtyStore.Tests.AssemblyInfo.cs
 /Users/Guest/Projects/MariosSpecialtyStore/MariosSpecialtyStore.Tests/obj/Debug/netcoreapp1.1/MariosSpecialtyStore.Tests.dll
 /Users/Guest/Projects/MariosSpecialtyStore/MariosSpecialtyStore.Tests/obj/Debug/netcoreapp1.1/MariosSpecialtyStore.Tests.pdb
+/Users/Guest/Projects/MariosSpecialtyStore/MariosSpecialtyStore.Tests/obj/Debug/netcoreapp1.1/MariosSpecialtyStore.Tests.csproj.CoreCompileInputs.cache

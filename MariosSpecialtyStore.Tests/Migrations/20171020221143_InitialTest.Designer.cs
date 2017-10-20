@@ -5,12 +5,13 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using MariosSpecialtyStore.Models;
 
-namespace MariosSpecialtyStore.Migrations
+namespace MariosSpecialtyStore.Tests.Migrations
 {
-    [DbContext(typeof(MariosSpecialtyStoreContext))]
-    partial class MariosSpecialtyStoreContextModelSnapshot : ModelSnapshot
+    [DbContext(typeof(TestDbContext))]
+    [Migration("20171020221143_InitialTest")]
+    partial class InitialTest
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.1.2");

@@ -5,10 +5,10 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using MariosSpecialtyStore.Models;
 
-namespace MariosSpecialtyStore.Migrations
+namespace MariosSpecialtyStore.Tests.Migrations
 {
-    [DbContext(typeof(MariosSpecialtyStoreContext))]
-    partial class MariosSpecialtyStoreContextModelSnapshot : ModelSnapshot
+    [DbContext(typeof(TestDbContext))]
+    partial class TestDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {

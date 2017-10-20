@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
 
 namespace MariosSpecialtyStore.Models                           
 {
@@ -27,6 +28,11 @@ namespace MariosSpecialtyStore.Models
             this.Name = name;
             this.Cost = cost;
             this.Country = country;
+        }
+
+        public int AverageRating()
+        {
+            return Reviews.Sum(review => review.Rating) / Reviews.Count();
         }
 
 

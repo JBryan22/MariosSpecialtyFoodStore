@@ -13,6 +13,7 @@ namespace MariosSpecialtyStore.Models
         [Range(50, 250)]
         public string Content_Body { get; set; }
         [Required]
+        [Range(1,5)]
         public int Rating { get; set; }
 
         public int ProductId { get; set; }
