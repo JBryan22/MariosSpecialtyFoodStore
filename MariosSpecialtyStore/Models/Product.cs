@@ -11,7 +11,7 @@ namespace MariosSpecialtyStore.Models
         [Required]
         public string Name { get; set; }
         [Required]
-        public decimal Cost { get; set; }
+        public double Cost { get; set; }
         [Required]
         public string Country { get; set; }
 
@@ -22,7 +22,7 @@ namespace MariosSpecialtyStore.Models
         {
         }
 
-        public Product(string name, decimal cost, string country)
+        public Product(string name, double cost, string country)
         {
             this.Name = name;
             this.Cost = cost;

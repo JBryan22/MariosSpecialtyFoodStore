@@ -1,0 +1,15 @@
+/Users/Guest/Projects/MariosSpecialtyStore/MariosSpecialtyStore.Tests/bin/Debug/netcoreapp1.1/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+/Users/Guest/Projects/MariosSpecialtyStore/MariosSpecialtyStore.Tests/bin/Debug/netcoreapp1.1/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+/Users/Guest/Projects/MariosSpecialtyStore/MariosSpecialtyStore.Tests/bin/Debug/netcoreapp1.1/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+/Users/Guest/Projects/MariosSpecialtyStore/MariosSpecialtyStore.Tests/bin/Debug/netcoreapp1.1/MariosSpecialtyStore.Tests.deps.json
+/Users/Guest/Projects/MariosSpecialtyStore/MariosSpecialtyStore.Tests/bin/Debug/netcoreapp1.1/MariosSpecialtyStore.Tests.runtimeconfig.json
+/Users/Guest/Projects/MariosSpecialtyStore/MariosSpecialtyStore.Tests/bin/Debug/netcoreapp1.1/MariosSpecialtyStore.Tests.runtimeconfig.dev.json
+/Users/Guest/Projects/MariosSpecialtyStore/MariosSpecialtyStore.Tests/bin/Debug/netcoreapp1.1/MariosSpecialtyStore.Tests.dll
+/Users/Guest/Projects/MariosSpecialtyStore/MariosSpecialtyStore.Tests/bin/Debug/netcoreapp1.1/MariosSpecialtyStore.Tests.pdb
+/Users/Guest/Projects/MariosSpecialtyStore/MariosSpecialtyStore.Tests/bin/Debug/netcoreapp1.1/MariosSpecialtyStore.dll
+/Users/Guest/Projects/MariosSpecialtyStore/MariosSpecialtyStore.Tests/bin/Debug/netcoreapp1.1/MariosSpecialtyStore.pdb
+/Users/Guest/Projects/MariosSpecialtyStore/MariosSpecialtyStore.Tests/obj/Debug/netcoreapp1.1/MariosSpecialtyStore.Tests.csprojResolveAssemblyReference.cache
+/Users/Guest/Projects/MariosSpecialtyStore/MariosSpecialtyStore.Tests/obj/Debug/netcoreapp1.1/MariosSpecialtyStore.Tests.csproj.CoreCompileInputs.cache
+/Users/Guest/Projects/MariosSpecialtyStore/MariosSpecialtyStore.Tests/obj/Debug/netcoreapp1.1/MariosSpecialtyStore.Tests.AssemblyInfo.cs
+/Users/Guest/Projects/MariosSpecialtyStore/MariosSpecialtyStore.Tests/obj/Debug/netcoreapp1.1/MariosSpecialtyStore.Tests.dll
+/Users/Guest/Projects/MariosSpecialtyStore/MariosSpecialtyStore.Tests/obj/Debug/netcoreapp1.1/MariosSpecialtyStore.Tests.pdb

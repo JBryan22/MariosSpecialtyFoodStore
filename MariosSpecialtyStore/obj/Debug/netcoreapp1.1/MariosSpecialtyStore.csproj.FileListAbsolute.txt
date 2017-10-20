@@ -6,3 +6,5 @@
 /Users/Guest/Projects/MariosSpecialtyStore/MariosSpecialtyStore/bin/Debug/netcoreapp1.1/MariosSpecialtyStore.pdb
 /Users/Guest/Projects/MariosSpecialtyStore/MariosSpecialtyStore/obj/Debug/netcoreapp1.1/MariosSpecialtyStore.dll
 /Users/Guest/Projects/MariosSpecialtyStore/MariosSpecialtyStore/obj/Debug/netcoreapp1.1/MariosSpecialtyStore.pdb
+/Users/Guest/Projects/MariosSpecialtyStore/MariosSpecialtyStore/obj/Debug/netcoreapp1.1/MariosSpecialtyStore.csprojResolveAssemblyReference.cache
+/Users/Guest/Projects/MariosSpecialtyStore/MariosSpecialtyStore/obj/Debug/netcoreapp1.1/MariosSpecialtyStore.csproj.CoreCompileInputs.cache
