@@ -1,0 +1,8 @@
+/Users/Guest/Projects/MariosSpecialtyStore/MariosSpecialtyStore/bin/Debug/netcoreapp1.1/MariosSpecialtyStore.deps.json
+/Users/Guest/Projects/MariosSpecialtyStore/MariosSpecialtyStore/bin/Debug/netcoreapp1.1/MariosSpecialtyStore.runtimeconfig.json
+/Users/Guest/Projects/MariosSpecialtyStore/MariosSpecialtyStore/bin/Debug/netcoreapp1.1/MariosSpecialtyStore.runtimeconfig.dev.json
+/Users/Guest/Projects/MariosSpecialtyStore/MariosSpecialtyStore/obj/Debug/netcoreapp1.1/MariosSpecialtyStore.AssemblyInfo.cs
+/Users/Guest/Projects/MariosSpecialtyStore/MariosSpecialtyStore/bin/Debug/netcoreapp1.1/MariosSpecialtyStore.dll
+/Users/Guest/Projects/MariosSpecialtyStore/MariosSpecialtyStore/bin/Debug/netcoreapp1.1/MariosSpecialtyStore.pdb
+/Users/Guest/Projects/MariosSpecialtyStore/MariosSpecialtyStore/obj/Debug/netcoreapp1.1/MariosSpecialtyStore.dll
+/Users/Guest/Projects/MariosSpecialtyStore/MariosSpecialtyStore/obj/Debug/netcoreapp1.1/MariosSpecialtyStore.pdb
