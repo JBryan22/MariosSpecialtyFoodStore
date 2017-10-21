@@ -1,0 +1,61 @@
+﻿@model IEnumerable<MariosSpecialtyFoods.Models.Product>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Product List</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+<div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card-deck">
+		        @foreach (var product in Model)
+                {
+                  <div class="card">
+                    <img class="card-img-top" src="../../wwwroot/images/ImagePlaceholder.png" alt="Card image cap">
+                    <div class="card-block">
+                      <h4 class="card-title">@Html.DisplayFor(m => product.Name)</h4>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text">@Html.DisplayFor(m => product.Country)</p>
+                      <p class="card-text">@Html.DisplayFor(m => product.Cost)</p>
+				      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+			    }
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="postlist">
+                <div class="panel">
+                    <div class="panel-heading">
+                        
+                            <div class="row">
+                                    <h4 class="post-title">@Html.DisplayFor(m => post.Title)</h4>
+                                    <p class="post-date">@Html.DisplayFor(m => post.PostDate)</p>
+                                <hr class="post-line"/>
+                            </div>
+                            <p class="post-author">@Html.DisplayFor(m => post.Author)</p>
+                        
+                    </div>
+
+                    <div class="panel-body">
+                        @Html.DisplayFor(m => post.TextBody)
+                    </div>
+
+                    <div class="panel-footer">
+                        <span class="label label-default">@Html.DisplayFor(m => post.Topic)</span>
+                        <div class="post-admin">
+                            <span class="edit-post">@Html.ActionLink("Edit", "Edit", "Posts", new { id = post.ID }) |</span>
+                            <span>@Html.ActionLink("Delete", "Delete", "Posts", new { id = post.ID })</span>
+                        </div>
+                    </div>
+                </div>
+            </div>

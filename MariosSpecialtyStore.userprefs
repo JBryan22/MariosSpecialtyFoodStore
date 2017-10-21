@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{644D35EA-C167-4F63-B5BA-EAE0EE9AC639}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="MariosSpecialtyStore/MariosSpecialtyStore.csproj">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MariosSpecialtyStore/Views/Products/Index.cshtml">
     <Files>
-      <File FileName="MariosSpecialtyStore/Models/Product.cs" Line="36" Column="10" />
+      <File FileName="MariosSpecialtyStore/Models/Product.cs" Line="37" Column="9" />
       <File FileName="MariosSpecialtyStore/Models/Review.cs" Line="50" Column="9" />
       <File FileName="MariosSpecialtyStore.Tests/ModelTests/ProductTest.cs" Line="36" Column="1" />
       <File FileName="MariosSpecialtyStore.Tests/ModelTests/ReviewTest.cs" Line="35" Column="2" />
@@ -12,22 +12,18 @@
       <File FileName="MariosSpecialtyStore.Tests/ControllerTests/ReviewsControllerTest.cs" Line="129" Column="34" />
       <File FileName="MariosSpecialtyStore/Models/Repositories/EFProductRepository.cs" Line="51" Column="32" />
       <File FileName="MariosSpecialtyStore/Views/Home/About.cshtml" Line="8" Column="1" />
-      <File FileName="MariosSpecialtyStore/MariosSpecialtyStore.csproj" Line="21" Column="105" />
+      <File FileName="MariosSpecialtyStore/MariosSpecialtyStore.csproj" Line="1" Column="1" />
+      <File FileName="MariosSpecialtyStore/Controllers/ProductsController.cs" Line="1" Column="1" />
+      <File FileName="MariosSpecialtyStore/Controllers/ReviewsController.cs" Line="1" Column="1" />
+      <File FileName="MariosSpecialtyStore/Views/Home/Index.cshtml" Line="5" Column="10" />
+      <File FileName="MariosSpecialtyStore/Views/Shared/_Layout.cshtml" Line="24" Column="11" />
+      <File FileName="MariosSpecialtyStore/wwwroot/css/site.css" Line="4" Column="1" />
+      <File FileName="MariosSpecialtyStore/Views/Products/Index.cshtml" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">
-          <Node name="MariosSpecialtyStore" expanded="True">
-            <Node name="MariosSpecialtyStore.Tests" expanded="True">
-              <Node name="MariosSpecialtyStore" expanded="True">
-                <Node name="Tests" expanded="True">
-                  <Node name="ControllerTests" expanded="True">
-                    <Node name="ReviewsControllerTest" expanded="True" selected="True" />
-                  </Node>
-                </Node>
-              </Node>
-            </Node>
-          </Node>
+          <Node name="MariosSpecialtyStore" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>

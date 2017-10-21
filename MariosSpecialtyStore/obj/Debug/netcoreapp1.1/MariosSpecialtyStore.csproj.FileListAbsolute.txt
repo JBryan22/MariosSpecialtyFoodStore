@@ -7,3 +7,12 @@
 /Users/Guest/Projects/MariosSpecialtyStore/MariosSpecialtyStore/obj/Debug/netcoreapp1.1/MariosSpecialtyStore.dll
 /Users/Guest/Projects/MariosSpecialtyStore/MariosSpecialtyStore/obj/Debug/netcoreapp1.1/MariosSpecialtyStore.pdb
 /Users/Guest/Projects/MariosSpecialtyStore/MariosSpecialtyStore/obj/Debug/netcoreapp1.1/MariosSpecialtyStore.csprojResolveAssemblyReference.cache
+/Users/Guest/Desktop/MariosSpecialtyFoodStore/MariosSpecialtyStore/bin/Debug/netcoreapp1.1/MariosSpecialtyStore.deps.json
+/Users/Guest/Desktop/MariosSpecialtyFoodStore/MariosSpecialtyStore/bin/Debug/netcoreapp1.1/MariosSpecialtyStore.runtimeconfig.json
+/Users/Guest/Desktop/MariosSpecialtyFoodStore/MariosSpecialtyStore/bin/Debug/netcoreapp1.1/MariosSpecialtyStore.runtimeconfig.dev.json
+/Users/Guest/Desktop/MariosSpecialtyFoodStore/MariosSpecialtyStore/bin/Debug/netcoreapp1.1/MariosSpecialtyStore.dll
+/Users/Guest/Desktop/MariosSpecialtyFoodStore/MariosSpecialtyStore/bin/Debug/netcoreapp1.1/MariosSpecialtyStore.pdb
+/Users/Guest/Desktop/MariosSpecialtyFoodStore/MariosSpecialtyStore/obj/Debug/netcoreapp1.1/MariosSpecialtyStore.csprojResolveAssemblyReference.cache
+/Users/Guest/Desktop/MariosSpecialtyFoodStore/MariosSpecialtyStore/obj/Debug/netcoreapp1.1/MariosSpecialtyStore.AssemblyInfo.cs
+/Users/Guest/Desktop/MariosSpecialtyFoodStore/MariosSpecialtyStore/obj/Debug/netcoreapp1.1/MariosSpecialtyStore.dll
+/Users/Guest/Desktop/MariosSpecialtyFoodStore/MariosSpecialtyStore/obj/Debug/netcoreapp1.1/MariosSpecialtyStore.pdb

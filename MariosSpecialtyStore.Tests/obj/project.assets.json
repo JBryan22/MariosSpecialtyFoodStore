@@ -11735,10 +11735,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Guest/Projects/MariosSpecialtyStore/MariosSpecialtyStore.Tests/MariosSpecialtyStore.Tests.csproj",
+      "projectUniqueName": "/Users/Guest/Desktop/MariosSpecialtyFoodStore/MariosSpecialtyStore.Tests/MariosSpecialtyStore.Tests.csproj",
       "projectName": "MariosSpecialtyStore.Tests",
-      "projectPath": "/Users/Guest/Projects/MariosSpecialtyStore/MariosSpecialtyStore.Tests/MariosSpecialtyStore.Tests.csproj",
-      "outputPath": "/Users/Guest/Projects/MariosSpecialtyStore/MariosSpecialtyStore.Tests/obj",
+      "projectPath": "/Users/Guest/Desktop/MariosSpecialtyFoodStore/MariosSpecialtyStore.Tests/MariosSpecialtyStore.Tests.csproj",
+      "outputPath": "/Users/Guest/Desktop/MariosSpecialtyFoodStore/MariosSpecialtyStore.Tests/obj",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"
@@ -11746,8 +11746,8 @@
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {
-            "/Users/Guest/Projects/MariosSpecialtyStore/MariosSpecialtyStore/MariosSpecialtyStore.csproj": {
-              "projectPath": "/Users/Guest/Projects/MariosSpecialtyStore/MariosSpecialtyStore/MariosSpecialtyStore.csproj"
+            "/Users/Guest/Desktop/MariosSpecialtyFoodStore/MariosSpecialtyStore/MariosSpecialtyStore.csproj": {
+              "projectPath": "/Users/Guest/Desktop/MariosSpecialtyFoodStore/MariosSpecialtyStore/MariosSpecialtyStore.csproj"
             }
           }
         }
