@@ -30,9 +30,17 @@ namespace MariosSpecialtyStore.Models
             this.Country = country;
         }
 
-        public int AverageRating()
+        public double AverageRating()
         {
-            return Reviews.Sum(review => review.Rating) / Reviews.Count();
+            if (Reviews.Count > 0)
+            {
+                return Math.Round(Reviews.Sum(review => review.Rating) / (double)Reviews.Count(), 2);
+
+            }
+            else
+            {
+                return 0;
+            }
         }
 
 

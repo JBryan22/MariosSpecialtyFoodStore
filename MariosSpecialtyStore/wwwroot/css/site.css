@@ -8,6 +8,16 @@ header {
     color:white;
 }
 
+.anchor {
+    text-decoration: none;
+    color: #6DA0CC;
+}
+
+.anchor:hover {
+    text-decoration: underline;
+    color: #6DA0CC;
+}
+
 /* Home Page */
 
 .home-image {
@@ -29,4 +39,22 @@ header {
     transform: translate(-50%, -50%);
     left:50%;
     margin-right:-50%;
+}
+
+.card-img-top {
+    border-bottom: 1px solid #9d9d9d;
+}
+
+.home-card {
+    margin: auto;
+    max-width: 350px;
+}
+
+.card {
+    border-radius: 0px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+}
+
+.card-deck {
+    margin: 0 40px;
 }
