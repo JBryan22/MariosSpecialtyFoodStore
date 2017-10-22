@@ -1,3 +1,32 @@
-﻿header {
-    padding-top: 25px;
+﻿html {
+    font-family: "Roboto" !important;
+}
+
+header {
+    background-image: 
+        url("../images/navbar-image.jpg");
+    color:white;
+}
+
+/* Home Page */
+
+.home-image {
+    background-image: linear-gradient( 
+        rgba(0,0,0,0.4), 
+        rgba(0,0,0,0.4)),
+        url(../images/food-platter.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 35em;
+    position: relative;
+}
+
+.home-image h1 {
+    color:white;
+    margin: 0;
+    position:absolute;
+    top:50%;
+    transform: translate(-50%, -50%);
+    left:50%;
+    margin-right:-50%;
 }
