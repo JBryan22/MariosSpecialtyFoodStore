@@ -10,24 +10,26 @@
     <a asp-action="Create">Create New</a>
 </p>
 
-<div>
-    <div class="row">
-        <div class="col-md-12">
-            <div class="card-deck">
-		        @foreach (var product in Model)
-                {
-                  <div class="card">
-                    <img class="card-img-top" src="../../wwwroot/images/ImagePlaceholder.png" alt="Card image cap">
-                    <div class="card-block">
-                      <h4 class="card-title">@Html.DisplayFor(m => product.Name)</h4>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text">@Html.DisplayFor(m => product.Country)</p>
-                      <p class="card-text">@Html.DisplayFor(m => product.Cost)</p>
-				      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+<div class="product-list">
+    <h3 class="home-product-header">Product List</h3>
+    <div class="container">
+        <div class="row">
+            @foreach (var product in Model)
+            {
+                <div class="col-md-4">
+                    <div class="card home-card">
+                        <img class="card-img-top" src="~/images/ImagePlaceholder.png" alt="Card image cap">
+                        <h4 class="card-title">@Html.DisplayFor(m => product.Name)</h4>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text">@Html.DisplayFor(m => product.Country)</p>
+                        <p class="card-text">@Html.DisplayFor(m => product.Cost)</p>
+                        <a asp-controller="Products" asp-action="Details" asp-route-id="@product.ProductId" class="anchor"><p class="card-text">See Details</p></a>
+                        <div class="card-footer">
+                            <small class="text-muted">Average Rating: @product.AverageRating()</small>
+                        </div>
                     </div>
-                  </div>
-			    }
-            </div>
+                </div>
+            }
         </div>
     </div>
 </div>

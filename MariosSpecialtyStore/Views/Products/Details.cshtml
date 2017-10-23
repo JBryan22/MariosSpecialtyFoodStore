@@ -1,5 +1,32 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model MariosSpecialtyStore.Models.Product
+
 @{
+    ViewData["Title"] = "Index";
 }
+
+<h2>@Html.DisplayFor(model => model.Name) Details</h2>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="detail-section">
+            <p>Product of @Html.DisplayFor(model => model.Country)</p>
+            <p>Cost: @Html.DisplayFor(model => model.Cost)</p>
+            <p>This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <div class="review-section">
+                @foreach (var review in Model.Reviews)
+                {
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">@review.Rating</h4>
+                        <h6 class="card-subtitle">@review.Author</h6>
+                        <p class="card-text">@review.Content_Body</p>
+                    </div>
+                </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Add review section-->
