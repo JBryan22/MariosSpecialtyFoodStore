@@ -1,32 +1,29 @@
 ﻿<Properties StartupConfiguration="{644D35EA-C167-4F63-B5BA-EAE0EE9AC639}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="MariosSpecialtyStore/Views/Products/Index.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MariosSpecialtyStore/Controllers/HomeController.cs">
     <Files>
-      <File FileName="MariosSpecialtyStore/Models/Product.cs" Line="37" Column="9" />
-      <File FileName="MariosSpecialtyStore/Models/Review.cs" Line="50" Column="9" />
-      <File FileName="MariosSpecialtyStore.Tests/ModelTests/ProductTest.cs" Line="36" Column="1" />
-      <File FileName="MariosSpecialtyStore.Tests/ModelTests/ReviewTest.cs" Line="35" Column="2" />
-      <File FileName="MariosSpecialtyStore.Tests/ControllerTests/ProductsControllerTest.cs" Line="100" Column="21" />
-      <File FileName="MariosSpecialtyStore.Tests/Models/TestDbContext.cs" Line="4" Column="31" />
+      <File FileName="MariosSpecialtyStore/Migrations/20171022204236_FillDatabase.cs" Line="23" Column="10" />
+      <File FileName="MariosSpecialtyStore/Views/Products/Details.cshtml" Line="30" Column="31" />
+      <File FileName="MariosSpecialtyStore/Controllers/ProductsController.cs" Line="76" Column="38" />
+      <File FileName="MariosSpecialtyStore/Views/Home/Index.cshtml" Line="45" Column="57" />
+      <File FileName="MariosSpecialtyStore/Views/Products/Index.cshtml" Line="28" Column="96" />
+      <File FileName="MariosSpecialtyStore/Views/Products/Create.cshtml" Line="31" Column="23" />
       <File FileName="MariosSpecialtyStore/Startup.cs" Line="33" Column="30" />
-      <File FileName="MariosSpecialtyStore/Models/MariosSpecialtyStoreContext.cs" Line="16" Column="1" />
-      <File FileName="MariosSpecialtyStore.Tests/ControllerTests/ReviewsControllerTest.cs" Line="129" Column="34" />
-      <File FileName="MariosSpecialtyStore/Models/Repositories/EFProductRepository.cs" Line="51" Column="32" />
-      <File FileName="MariosSpecialtyStore/Views/Home/About.cshtml" Line="8" Column="1" />
-      <File FileName="MariosSpecialtyStore/MariosSpecialtyStore.csproj" Line="1" Column="1" />
-      <File FileName="MariosSpecialtyStore/Controllers/ProductsController.cs" Line="1" Column="1" />
-      <File FileName="MariosSpecialtyStore/Controllers/ReviewsController.cs" Line="1" Column="1" />
-      <File FileName="MariosSpecialtyStore/Views/Home/Index.cshtml" Line="5" Column="10" />
-      <File FileName="MariosSpecialtyStore/Views/Shared/_Layout.cshtml" Line="24" Column="11" />
+      <File FileName="MariosSpecialtyStore/Models/Product.cs" Line="23" Column="10" />
+      <File FileName="MariosSpecialtyStore/appsettings.json" Line="1" Column="1" />
+      <File FileName="MariosSpecialtyStore/Views/Shared/_Layout.cshtml" Line="24" Column="1" />
+      <File FileName="MariosSpecialtyStore/Views/Products/Edit.cshtml" Line="24" Column="35" />
+      <File FileName="MariosSpecialtyStore/Views/Reviews/Index.cshtml" Line="1" Column="1" />
+      <File FileName="MariosSpecialtyStore/Views/Reviews/Create.cshtml" Line="15" Column="86" />
+      <File FileName="MariosSpecialtyStore/Views/Reviews/Edit.cshtml" Line="13" Column="35" />
+      <File FileName="MariosSpecialtyStore/Views/Products/Delete.cshtml" Line="41" Column="7" />
+      <File FileName="MariosSpecialtyStore/Models/Review.cs" Line="50" Column="1" />
+      <File FileName="MariosSpecialtyStore/Controllers/ReviewsController.cs" Line="74" Column="14" />
+      <File FileName="MariosSpecialtyStore/Views/Reviews/Delete.cs" Line="1" Column="1" />
+      <File FileName="MariosSpecialtyStore/Views/Reviews/Delete.cshtml" Line="37" Column="55" />
+      <File FileName="MariosSpecialtyStore/Views/Shared/_ValidationScriptsPartial.cshtml" Line="19" Column="1" />
       <File FileName="MariosSpecialtyStore/wwwroot/css/site.css" Line="4" Column="1" />
-      <File FileName="MariosSpecialtyStore/Views/Products/Index.cshtml" Line="1" Column="1" />
+      <File FileName="MariosSpecialtyStore/Controllers/HomeController.cs" Line="38" Column="14" />
     </Files>
-    <Pads>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="MariosSpecialtyStore" expanded="True" selected="True" />
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

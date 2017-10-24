@@ -4,25 +4,42 @@
     ViewData["Title"] = "Index";
 }
 
-<h2>@Html.DisplayFor(model => model.Name) Details</h2>
 
-<div class="row">
-    <div class="col-md-12">
-        <div class="detail-section">
-            <p>Product of @Html.DisplayFor(model => model.Country)</p>
-            <p>Cost: @Html.DisplayFor(model => model.Cost)</p>
-            <p>This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <div class="review-section">
-                @foreach (var review in Model.Reviews)
-                {
-                <div class="card">
-                    <div class="card-body">
-                        <h4 class="card-title">@review.Rating</h4>
-                        <h6 class="card-subtitle">@review.Author</h6>
-                        <p class="card-text">@review.Content_Body</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="detail-section">
+                <h2>@Html.DisplayFor(model => model.Name) Details</h2>
+                <p>Product of @Html.DisplayFor(model => model.Country)</p>
+                <p>Cost: @Html.DisplayFor(model => model.Cost)</p>
+                <p>This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p><a asp-controller="Products" asp-action="Edit" asp-route-id="@Model.ProductId">Edit</a> | <a asp-controller="Products" asp-action="Delete" asp-route-id="@Model.ProductId">Delete</a></p>
+
+				@if(Model.ProductImg!= null)
+				{
+                    String img64 = Convert.ToBase64String(Model.ProductImg);
+                    String img64Url = string.Format("data:image/" + Model.ProductImg + ";base64,{0}", img64); //imagetype can be e.g. gif, jpeg, png etc.
+                    <img class="detail-image" src="@img64Url" />
+				}
+				else
+				{
+                    <img class="detail-image" src="~/images/ImagePlaceholder.png" alt="product image"> 
+				}
+				<div class="review-section">
+					<h3>Reviews</h3>
+					<h6><a asp-controller="Reviews" asp-action="Create" asp-route-id="@Model.ProductId">Add Review</a></h6>
+                    @foreach (var review in Model.Reviews)
+                    {
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">@review.Rating</h4>
+                            <h6 class="card-subtitle">Submitted By: @review.Author</h6>
+                            <p class="card-text">@review.Content_Body</p>
+							<small><a asp-controller="Reviews" asp-action="Edit" asp-route-id="@review.ReviewId">Edit</a> | <a asp-controller="Reviews" asp-action="Delete" asp-route-id="@review.ReviewId">Delete</a></small>
+                        </div>
                     </div>
+                    }
                 </div>
-                }
             </div>
         </div>
     </div>

@@ -18,14 +18,24 @@
             {
                 <div class="col-md-4">
                     <div class="card home-card">
-                        <img class="card-img-top" src="~/images/ImagePlaceholder.png" alt="Card image cap">
+
+    					@if(product.ProductImg!= null)
+                        {
+                            String img64 = Convert.ToBase64String(product.ProductImg);
+                            String img64Url = string.Format("data:image/" + product.ProductImg + ";base64,{0}", img64); //imagetype can be e.g. gif, jpeg, png etc.
+                            <img class="detail-image" src="@img64Url" />
+                        }
+                        else
+                        {
+                            <img class="detail-image" src="~/images/ImagePlaceholder.png" alt="product image"> 
+                        }
                         <h4 class="card-title">@Html.DisplayFor(m => product.Name)</h4>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text">@Html.DisplayFor(m => product.Country)</p>
+                        <p class="card-text">Product of @Html.DisplayFor(m => product.Country)</p>
                         <p class="card-text">@Html.DisplayFor(m => product.Cost)</p>
                         <a asp-controller="Products" asp-action="Details" asp-route-id="@product.ProductId" class="anchor"><p class="card-text">See Details</p></a>
                         <div class="card-footer">
-                            <small class="text-muted">Average Rating: @product.AverageRating()</small>
+                            <small class="text-muted">Average Rating: @product.AverageRating() </small>
                         </div>
                     </div>
                 </div>

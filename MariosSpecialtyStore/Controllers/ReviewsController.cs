@@ -38,29 +38,44 @@ namespace MariosSpecialtyStore.Controllers
 			return View(thisReview);
 		}
 
-		public IActionResult Create()
+		public IActionResult Create(int id)
 		{
+            ViewBag.ProductId = id;
 			return View();
 		}
 
 		[HttpPost]
 		public IActionResult Create(Review review)
 		{
-			reviewRepo.Save(review);
-			return RedirectToAction("Index");
+            if (ModelState.IsValid)
+            {
+                reviewRepo.Save(review);
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return View(review);
+            }
 		}
 
 		public IActionResult Edit(int id)
-		{
-			var thisReview = reviewRepo.Reviews.FirstOrDefault(review => review.ReviewId == id);
-			return View(thisReview);
+        {
+            var thisReview = reviewRepo.Reviews.FirstOrDefault(review => review.ReviewId == id);
+            return View(thisReview);
 		}
 
 		[HttpPost]
 		public IActionResult Edit(Review review)
 		{
-			reviewRepo.Edit(review);
-			return RedirectToAction("Index");
+            if (ModelState.IsValid)
+            {
+                reviewRepo.Edit(review);
+                return RedirectToAction("Index", "Products");
+            }
+            else
+            {
+                return View(review);
+            }
 		}
 
 		public IActionResult Delete(int id)
@@ -74,7 +89,8 @@ namespace MariosSpecialtyStore.Controllers
 		{
 			var thisReview = reviewRepo.Reviews.FirstOrDefault(review => review.ReviewId == id);
 			reviewRepo.Remove(thisReview);
-			return RedirectToAction("Index");
+            return RedirectToAction("Index", "Products");
+			
 		}
 	}
 }

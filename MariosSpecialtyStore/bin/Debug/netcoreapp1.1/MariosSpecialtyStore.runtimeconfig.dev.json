@@ -1,8 +1,7 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\devio\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\devio\\.nuget\\packages"
+      "/Users/Guest/.nuget/packages"
     ]
   }
 }

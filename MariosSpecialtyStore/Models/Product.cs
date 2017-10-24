@@ -12,9 +12,13 @@ namespace MariosSpecialtyStore.Models
         [Required]
         public string Name { get; set; }
         [Required]
+        [DisplayFormat(DataFormatString = "{0:C}")]
         public double Cost { get; set; }
         [Required]
         public string Country { get; set; }
+
+        [Display(Name = "Product Image")]
+        public byte[] ProductImg { get; set; }
 
         public virtual ICollection<Review> Reviews { get; set; }
 

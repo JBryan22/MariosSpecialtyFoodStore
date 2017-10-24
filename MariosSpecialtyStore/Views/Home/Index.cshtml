@@ -18,7 +18,7 @@
                         <img class="card-img-top" src="~/images/ImagePlaceholder.png" alt="Card image cap">
                         <h4 class="card-title">@Html.DisplayFor(m => product.Name)</h4>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text">@Html.DisplayFor(m => product.Country)</p>
+                        <p class="card-text">Product of @Html.DisplayFor(m => product.Country)</p>
                         <p class="card-text">@Html.DisplayFor(m => product.Cost)</p>
                         <a asp-controller="Products" asp-action="Details" asp-route-id="@product.ProductId" class="anchor"><p class="card-text">See Details</p></a>
                         <div class="card-footer">
@@ -42,7 +42,7 @@
                         <img class="card-img-top" src="~/images/ImagePlaceholder.png" alt="Card image cap">
                         <h4 class="card-title">@product.Name</h4>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text">@product.Country</p>
+                        <p class="card-text">Product of @product.Country</p>
                         <p class="card-text">@product.Cost</p>
                         <a asp-controller="Products" asp-action="Details" asp-route-id="@product.ProductId" class="anchor"><p class="card-text">See Details</p></a>
                         <div class="card-footer">

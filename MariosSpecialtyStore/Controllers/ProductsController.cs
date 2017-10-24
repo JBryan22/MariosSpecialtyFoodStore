@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MariosSpecialtyStore.Models;
 using MariosSpecialtyStore.Models.Repositories;
+using Microsoft.AspNetCore.Http;
+using System.IO;
 
 namespace MariosSpecialtyStore.Controllers
 {
@@ -34,7 +36,7 @@ namespace MariosSpecialtyStore.Controllers
 
         public IActionResult Details(int id)
         {
-            var thisProduct = productRepo.Products.FirstOrDefault(products => products.ProductId == id);
+            var thisProduct = productRepo.Products.Include(p => p.Reviews).FirstOrDefault(products => products.ProductId == id);
             return View(thisProduct);
         }
 
@@ -44,10 +46,32 @@ namespace MariosSpecialtyStore.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create(Product product)
+        public IActionResult Create([Bind("ProductId,Name,Cost,Country,ProductImg")] Product product, ICollection<IFormFile> files=null)
         {
-            productRepo.Save(product);
-            return RedirectToAction("Index");
+            if (files != null)
+            {
+                foreach (var file in files)
+                {
+                    if (file.Length > 0)
+                    {
+                        using (MemoryStream ms = new MemoryStream())
+                        {
+                            file.CopyTo(ms);
+                            byte[] fileBytes = ms.ToArray();
+                            product.ProductImg = fileBytes;
+                        }
+                    }
+                }
+            }
+            if(ModelState.IsValid)
+            {
+                productRepo.Save(product);
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return View(product);
+            }
         }
 
         public IActionResult Edit(int id)
@@ -57,10 +81,33 @@ namespace MariosSpecialtyStore.Controllers
         }
 
         [HttpPost]
-        public IActionResult Edit(Product product)
+        public IActionResult Edit(Product product, ICollection<IFormFile> files=null)
         {
-            productRepo.Edit(product);
-            return RedirectToAction("Index");
+            if (files != null)
+            {
+                foreach (var file in files)
+                {
+                    if (file.Length > 0)
+                    {
+                        using (MemoryStream ms = new MemoryStream())
+                        {
+                            file.CopyTo(ms);
+                            byte[] fileBytes = ms.ToArray();
+                            product.ProductImg = fileBytes;
+                        }
+                    }
+                }
+            }
+            if(ModelState.IsValid)
+            {
+                productRepo.Edit(product);
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return View(product);
+
+            }
         }
 
         public IActionResult Delete(int id)
