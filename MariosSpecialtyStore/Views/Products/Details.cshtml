@@ -31,8 +31,16 @@
 				}
 				<div class="review-section">
 					<h3>Reviews</h3>
-					<h6><a asp-controller="Reviews" asp-action="Create" asp-route-id="@Model.ProductId">Add Review</a></h6>
-                    @foreach (var review in Model.Reviews)
+
+					<div class="review-output"></div>
+
+					<form action="ReviewPartial" class="add-review-form">
+						<input type="hidden" name="id" value="@Model.ProductId">
+					    <button type="submit" class="add-review-button">Add Review</button>
+                    </form>
+
+					<div class="review-created-output"></div>
+					@foreach (var review in Model.Reviews)
                     {
                     <div class="card">
                         <div class="card-body">

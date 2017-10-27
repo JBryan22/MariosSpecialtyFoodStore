@@ -10,7 +10,6 @@ namespace MariosSpecialtyStore.Models
         [Required]
         public string Author { get; set; }
         [Required]
-        [Range(50, 250)]
         public string Content_Body { get; set; }
         [Required]
         [Range(1,5)]

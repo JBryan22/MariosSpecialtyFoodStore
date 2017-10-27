@@ -42,6 +42,7 @@ namespace MariosSpecialtyStore.Controllers
 			return View(thisReview);
 		}
 
+        [AllowAnonymous]
 		public IActionResult Create(int id)
 		{
             ViewBag.ProductId = id;
@@ -55,11 +56,11 @@ namespace MariosSpecialtyStore.Controllers
             if (ModelState.IsValid)
             {
                 reviewRepo.Save(review);
-                return RedirectToAction("Index");
+                return Json(review);
             }
             else
             {
-                return View(review);
+                return Json("damn it");
             }
 		}
 
