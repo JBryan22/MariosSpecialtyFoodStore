@@ -9,16 +9,20 @@
     <div class="row">
         <div class="col-md-12">
             <div class="detail-section">
-                <h2>@Html.DisplayFor(model => model.Name) Details</h2>
+				<div class="row">
+				<div class="col-md-9 detail-body">
+                <h2 >@Html.DisplayFor(model => model.Name) Details</h2>
                 <p>Product of @Html.DisplayFor(model => model.Country)</p>
-                <p>Cost: @Html.DisplayFor(model => model.Cost)</p>
+                <p>Cost: $@Model.Cost</p>
                 <p>This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-
+                <p>Average Rating: @Model.AverageRating()</p>
+						
                 @if (User.Identity.IsAuthenticated)
 				{
 				    <p><a asp-controller="Products" asp-action="Edit" asp-route-id="@Model.ProductId">Edit</a> | <a asp-controller="Products" asp-action="Delete" asp-route-id="@Model.ProductId">Delete</a></p>
                 }
-				
+				</div>
+				<div class="col-md-3 detail-picture">
 				@if(Model.ProductImg!= null)
 				{
                     String img64 = Convert.ToBase64String(Model.ProductImg);
@@ -29,32 +33,34 @@
 				{
                     <img class="detail-image" src="~/images/ImagePlaceholder.png" alt="product image"> 
 				}
-				<div class="review-section">
-					<h3>Reviews</h3>
+				</div>	
+			</div>
+				</div>
+			<div class="review-section">
+				<h4 class="detail-header">REVIEWS</h4>
 
-					<div class="review-output"></div>
+				<div class="review-output"></div>
 
-					<form action="ReviewPartial" class="add-review-form">
-						<input type="hidden" name="id" value="@Model.ProductId">
-					    <button type="submit" class="add-review-button">Add Review</button>
-                    </form>
+				<form action="ReviewPartial" class="add-review-form">
+					<input type="hidden" name="id" value="@Model.ProductId">
+				    <button type="submit" class="add-review-button">Add Review</button>
+                </form>
 
-					<div class="review-created-output"></div>
-					@foreach (var review in Model.Reviews)
-                    {
-                    <div class="card">
-                        <div class="card-body">
-                            <h4 class="card-title">@review.Rating</h4>
-                            <h6 class="card-subtitle">Submitted By: @review.Author</h6>
-                            <p class="card-text">@review.Content_Body</p>
-                            @if (User.Identity.IsAuthenticated)
-							{
-                                <small><a asp-controller="Reviews" asp-action="Edit" asp-route-id="@review.ReviewId">Edit</a> | <a asp-controller="Reviews" asp-action="Delete" asp-route-id="@review.ReviewId">Delete</a></small>
-							}
-						</div>
-                    </div>
-                    }
+				<div class="review-created-output"></div>
+				@foreach (var review in Model.Reviews)
+                {
+                <div class="card card-review">
+                    <div class="card-body">
+                        <h5 class="card-title">Rating: @review.Rating</h5>
+                        <small class="card-subtitle">Submitted By: @review.Author</small>
+                        <p class="card-text">@review.Content_Body</p>
+                        @if (User.Identity.IsAuthenticated)
+						{
+                            <small><a asp-controller="Reviews" asp-action="Edit" asp-route-id="@review.ReviewId">Edit</a> | <a asp-controller="Reviews" asp-action="Delete" asp-route-id="@review.ReviewId">Delete</a></small>
+						}
+					</div>
                 </div>
+                }
             </div>
         </div>
     </div>

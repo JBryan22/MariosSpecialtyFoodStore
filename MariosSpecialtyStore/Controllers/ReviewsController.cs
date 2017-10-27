@@ -55,12 +55,16 @@ namespace MariosSpecialtyStore.Controllers
 		{
             if (ModelState.IsValid)
             {
+                if (User.Identity.IsAuthenticated)
+                {
+                    review.LoggedIn = true;
+                }
                 reviewRepo.Save(review);
                 return Json(review);
             }
             else
             {
-                return Json("damn it");
+                return Content("damn it");
             }
 		}
 

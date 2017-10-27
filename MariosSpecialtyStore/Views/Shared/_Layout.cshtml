@@ -13,36 +13,34 @@
       integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
       crossorigin="anonymous"></script>	
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="~/css/site.css" />
 </head>
 	
 <body>
     <header>
-        <div class="container">
             <div class="row top-nav">
                 <div class="col-md-4">
-                    <h4 class="logo"><a asp-controller="Home" asp-action="Index">MARIO'S SPECIALTY FOODS</a></h4>
+                    <h5 class="logo"><a asp-controller="Home" asp-action="Index">MARIO'S SPECIALTY FOODS</a></h5>
 				</div>
 				<div class="col-md-8">
-                    <ul>
-                        <li><a asp-controller="Products" asp-action="Index">Products</a></li>
+                    <ul class="nav-links">
+                        <li class="products-nav"><a asp-controller="Products" asp-action="Index">PRODUCTS</a></li>
 
 						@if (User.Identity.IsAuthenticated)
 						{
                             <li>@User.Identity.Name</li>
-                            <li><a asp-controller="Account" asp-action="LogOff">Log Out</a></li>
+                            <li><a asp-controller="Account" asp-action="LogOff">LOG OUT</a></li>
 						}
                         else
 						{
-                            <li><a asp-controller="Account" asp-action="Register">Register</a></li>
-                            <li><a asp-controller="Account" asp-action="Login">Login</a></li>
+                            <li><a asp-controller="Account" asp-action="Register">REGISTER</a></li>
+                            <li><a asp-controller="Account" asp-action="Login">LOGIN</a></li>
 						}
 
 					</ul>
 				</div>
 			</div>
-		</div>
 	</header>
 
 		

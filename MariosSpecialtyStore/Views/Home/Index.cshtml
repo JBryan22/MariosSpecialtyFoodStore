@@ -8,7 +8,7 @@
 </div>
 
 <div class="most-rated">
-    <h3 class="home-product-header">Most Rated Products</h3>
+    <h3 class="home-product-header">MOST POPULAR ITEMS</h3>
     <div class="container">
         <div class="row">
             @foreach (var product in Model)
@@ -19,7 +19,7 @@
                         <h4 class="card-title">@Html.DisplayFor(m => product.Name)</h4>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         <p class="card-text">Product of @Html.DisplayFor(m => product.Country)</p>
-                        <p class="card-text">@Html.DisplayFor(m => product.Cost)</p>
+                        <p class="card-text">$@product.Cost</p>
                         <a asp-controller="Products" asp-action="Details" asp-route-id="@product.ProductId" class="anchor"><p class="card-text">See Details</p></a>
                         <div class="card-footer">
                             <small class="text-muted">Average Rating: @product.AverageRating()</small>
@@ -31,19 +31,28 @@
     </div>
 </div>
 
-<div class="most-rated">
-    <h3 class="home-product-header">Our Newest Items</h3>
+<div class="newest-products">
+    <h3 class="home-product-header">OUR NEWEST ITEMS</h3>
     <div class="container">
         <div class="row">
             @foreach (var product in ViewBag.newest)
             {
                 <div class="col-md-4">
                     <div class="card home-card">
-                        <img class="card-img-top" src="~/images/ImagePlaceholder.png" alt="Card image cap">
+                        @if(product.ProductImg!= null)
+                        {
+                            String img64 = Convert.ToBase64String(product.ProductImg);
+                            String img64Url = string.Format("data:image/" + product.ProductImg + ";base64,{0}", img64); //imagetype can be e.g. gif, jpeg, png etc.
+                            <img class="detail-image" src="@img64Url" />
+                        }
+                        else
+                        {
+                            <img class="detail-image" src="~/images/ImagePlaceholder.png" alt="product image"> 
+                        }
                         <h4 class="card-title">@product.Name</h4>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         <p class="card-text">Product of @product.Country</p>
-                        <p class="card-text">@product.Cost</p>
+                        <p class="card-text">$@product.Cost</p>
                         <a asp-controller="Products" asp-action="Details" asp-route-id="@product.ProductId" class="anchor"><p class="card-text">See Details</p></a>
                         <div class="card-footer">
                             <small class="text-muted">Average Rating: @product.AverageRating()</small>
@@ -61,7 +70,7 @@
             <h3 class="about-header">ABOUT US</h3>
             <p>Capicola bresaola shank cow chuck pork loin ham hock meatball meatloaf kevin turkey hamburger short loin leberkas shankle. Brisket chicken frankfurter, meatloaf picanha corned beef flank pork loin beef. Ribeye beef ribs flank turducken short ribs. Turducken beef tail, venison burgdoggen rump pork belly shankle andouille swine doner ball tip shank.</p>
             <p>In proident enim, salami laboris alcatra consectetur picanha nisi boudin bacon capicola pork loin. Shank chicken aute tail eiusmod. Frankfurter ut veniam meatloaf cow est laborum biltong proident andouille tri-tip landjaeger. Ut turducken ex short loin. Reprehenderit exercitation occaecat beef ribs ullamco prosciutto pig pork belly fugiat chuck boudin. Meatloaf prosciutto pork loin exercitation in adipisicing ham jerky irure in tongue nulla id ut tail. Cillum mollit brisket biltong sirloin swine laboris excepteur.</p>
-        </div>
+		</div>
 
         <div class="col-md-6 mario-story">
             <h3 class="about-header">MARIO'S STORY</h3>

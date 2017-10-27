@@ -1,5 +1,6 @@
-﻿html {
-    font-family: "Roboto" !important;
+﻿body {
+    font-family: "Raleway" !important;
+    background-color: #fcfcfc;
 }
 
 header {
@@ -18,6 +19,39 @@ header {
     color: #6DA0CC;
 }
 
+/* Nav Bar*/
+
+.top-nav {
+    color: white;
+    padding: 10px;
+    padding-top: 25px;
+}
+
+.top-nav a {
+    color:white;
+}
+
+.top-nav a:hover {
+    text-decoration:none;
+    color:rgb(204,191,182);
+}
+
+.logo {
+    margin-left: 15px;
+    font-weight: 600;
+}
+
+.nav-links {
+    text-align: right;
+}
+
+.nav-links li{
+    font-size: 0.9em;
+    font-weight:500;
+    margin: 0 15px;
+    display:inline-block;
+}
+
 /* Home Page */
 
 .home-image {
@@ -33,6 +67,9 @@ header {
 
 .home-image h1 {
     color:white;
+    font-weight: 300;
+    font-size: 4em;
+    letter-spacing: 6px;
     margin: 0;
     position:absolute;
     top:50%;
@@ -41,13 +78,34 @@ header {
     margin-right:-50%;
 }
 
-.card-img-top {
-    border-bottom: 1px solid #9d9d9d;
+.home-product-header, .about-header, .detail-header {
+    text-align:center;
+    margin: 15px;
+    font-weight:700;
+    color:rgb(68,13,9);
+}
+
+.about-header {
+    border-bottom: 1px solid black;
 }
 
 .home-card {
     margin: auto;
     max-width: 350px;
+}
+
+.card img {
+    max-height:350px;
+
+}
+
+.card * {
+    text-align: center;
+}
+
+.card-review * {
+    text-align:left;
+    margin-left: 5px;
 }
 
 .card {
@@ -57,4 +115,69 @@ header {
 
 .card-deck {
     margin: 0 40px;
+}
+
+footer {
+    text-align:center;
+}
+
+.most-rated {
+    margin-bottom:30px;
+    margin-top: 30px;
+}
+
+/* Detail Page*/
+
+.detail-header {
+    text-align:center;
+    margin-bottom: -30px;
+}
+
+.detail-section {
+    position: relative;
+    margin-top: 15px;
+}
+
+.detail-image {
+    width:200px;
+    height:200px;
+}
+
+.card-review {
+    margin: 12px 0;
+    box-shadow:none;
+    padding:10px;
+}
+
+.card-title {
+    display:inline-block;
+}
+
+.card-subtitle {
+    position:absolute;
+    right:15px;
+    top:20px;
+}
+
+.add-review-form {
+    text-align:right;
+}
+
+.add-review-button {
+    background-color: #fcfcfc;
+    border: 1px solid black;
+}
+
+.add-review-button:hover {
+    cursor: pointer;
+    color:white;
+    background-color:rgb(68,13,9);
+}
+
+.review-partial {
+    margin-top:35px;
+}
+
+.form-control {
+    border-radius:0;
 }

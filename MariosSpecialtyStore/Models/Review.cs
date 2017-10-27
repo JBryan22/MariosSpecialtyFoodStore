@@ -15,6 +15,8 @@ namespace MariosSpecialtyStore.Models
         [Range(1,5)]
         public int Rating { get; set; }
 
+        public bool LoggedIn { get; set; }
+
         public int ProductId { get; set; }
         public virtual Product Product { get; set; }
 
