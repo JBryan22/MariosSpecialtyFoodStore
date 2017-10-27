@@ -39,3 +39,13 @@ C:/Users/devio/Source/Repos/MariosSpecialtyFoodStore/MariosSpecialtyStore/obj/De
 C:/Users/devio/Source/Repos/MariosSpecialtyFoodStore/MariosSpecialtyStore/obj/Debug/netcoreapp1.1/MariosSpecialtyStore.dll
 C:/Users/devio/Source/Repos/MariosSpecialtyFoodStore/MariosSpecialtyStore/obj/Debug/netcoreapp1.1/MariosSpecialtyStore.pdb
 /Users/Guest/Desktop/MariosSpecialtyFoodStore/MariosSpecialtyStore/obj/Debug/netcoreapp1.1/MariosSpecialtyStore.csproj.CoreCompileInputs.cache
+/Users/Guest/MariosSpecialtyFoodStore/MariosSpecialtyStore/bin/Debug/netcoreapp1.1/MariosSpecialtyStore.deps.json
+/Users/Guest/MariosSpecialtyFoodStore/MariosSpecialtyStore/bin/Debug/netcoreapp1.1/MariosSpecialtyStore.runtimeconfig.json
+/Users/Guest/MariosSpecialtyFoodStore/MariosSpecialtyStore/bin/Debug/netcoreapp1.1/MariosSpecialtyStore.runtimeconfig.dev.json
+/Users/Guest/MariosSpecialtyFoodStore/MariosSpecialtyStore/obj/Debug/netcoreapp1.1/MariosSpecialtyStore.csprojResolveAssemblyReference.cache
+/Users/Guest/MariosSpecialtyFoodStore/MariosSpecialtyStore/obj/Debug/netcoreapp1.1/MariosSpecialtyStore.AssemblyInfo.cs
+/Users/Guest/MariosSpecialtyFoodStore/MariosSpecialtyStore/obj/Debug/netcoreapp1.1/MariosSpecialtyStore.dll
+/Users/Guest/MariosSpecialtyFoodStore/MariosSpecialtyStore/obj/Debug/netcoreapp1.1/MariosSpecialtyStore.pdb
+/Users/Guest/MariosSpecialtyFoodStore/MariosSpecialtyStore/bin/Debug/netcoreapp1.1/MariosSpecialtyStore.dll
+/Users/Guest/MariosSpecialtyFoodStore/MariosSpecialtyStore/bin/Debug/netcoreapp1.1/MariosSpecialtyStore.pdb
+/Users/Guest/MariosSpecialtyFoodStore/MariosSpecialtyStore/obj/Debug/netcoreapp1.1/MariosSpecialtyStore.csproj.CoreCompileInputs.cache

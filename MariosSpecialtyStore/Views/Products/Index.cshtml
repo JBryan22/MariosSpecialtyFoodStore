@@ -1,14 +1,20 @@
 ﻿@model IEnumerable<MariosSpecialtyStore.Models.Product>
 
+@using System.Security.Claims
+
 @{
     ViewData["Title"] = "Index";
 }
 
 <h2>Product List</h2>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+@if (User.Identity.IsAuthenticated)
+{
+    <p>
+        <a class="admin-button" asp-action="Create">Create New</a>
+    </p>
+}
+
 
 <div class="product-list">
     <h3 class="home-product-header">Product List</h3>

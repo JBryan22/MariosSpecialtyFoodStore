@@ -1,15 +1,15 @@
 ﻿<Properties StartupConfiguration="{644D35EA-C167-4F63-B5BA-EAE0EE9AC639}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="MariosSpecialtyStore/Controllers/HomeController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MariosSpecialtyStore/Views/Account/Login.cshtml">
     <Files>
       <File FileName="MariosSpecialtyStore/Migrations/20171022204236_FillDatabase.cs" Line="23" Column="10" />
       <File FileName="MariosSpecialtyStore/Views/Products/Details.cshtml" Line="30" Column="31" />
-      <File FileName="MariosSpecialtyStore/Controllers/ProductsController.cs" Line="76" Column="38" />
+      <File FileName="MariosSpecialtyStore/Controllers/ProductsController.cs" Line="76" Column="1" />
       <File FileName="MariosSpecialtyStore/Views/Home/Index.cshtml" Line="45" Column="57" />
-      <File FileName="MariosSpecialtyStore/Views/Products/Index.cshtml" Line="28" Column="96" />
+      <File FileName="MariosSpecialtyStore/Views/Products/Index.cshtml" Line="28" Column="29" />
       <File FileName="MariosSpecialtyStore/Views/Products/Create.cshtml" Line="31" Column="23" />
-      <File FileName="MariosSpecialtyStore/Startup.cs" Line="33" Column="30" />
+      <File FileName="MariosSpecialtyStore/Startup.cs" Line="39" Column="13" />
       <File FileName="MariosSpecialtyStore/Models/Product.cs" Line="23" Column="10" />
-      <File FileName="MariosSpecialtyStore/appsettings.json" Line="1" Column="1" />
+      <File FileName="MariosSpecialtyStore/appsettings.json" Line="5" Column="2" />
       <File FileName="MariosSpecialtyStore/Views/Shared/_Layout.cshtml" Line="24" Column="1" />
       <File FileName="MariosSpecialtyStore/Views/Products/Edit.cshtml" Line="24" Column="35" />
       <File FileName="MariosSpecialtyStore/Views/Reviews/Index.cshtml" Line="1" Column="1" />
@@ -23,6 +23,14 @@
       <File FileName="MariosSpecialtyStore/Views/Shared/_ValidationScriptsPartial.cshtml" Line="19" Column="1" />
       <File FileName="MariosSpecialtyStore/wwwroot/css/site.css" Line="4" Column="1" />
       <File FileName="MariosSpecialtyStore/Controllers/HomeController.cs" Line="38" Column="14" />
+      <File FileName="MariosSpecialtyStore/MariosSpecialtyStore.csproj" Line="1" Column="1" />
+      <File FileName="MariosSpecialtyStore/Models/ApplicationUser.cs" Line="3" Column="31" />
+      <File FileName="MariosSpecialtyStore/Models/MariosSpecialtyStoreContext.cs" Line="10" Column="59" />
+      <File FileName="MariosSpecialtyStore/Controllers/AccountController.cs" Line="43" Column="31" />
+      <File FileName="MariosSpecialtyStore/ViewModels/RegisterViewModel.cs" Line="9" Column="28" />
+      <File FileName="MariosSpecialtyStore/Views/Account/Register.cshtml" Line="24" Column="2" />
+      <File FileName="MariosSpecialtyStore/ViewModels/LoginViewModel.cs" Line="1" Column="31" />
+      <File FileName="MariosSpecialtyStore/Views/Account/Login.cshtml" Line="5" Column="12" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

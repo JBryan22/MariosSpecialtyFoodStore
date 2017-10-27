@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace MariosSpecialtyStore
 {
@@ -35,6 +36,10 @@ namespace MariosSpecialtyStore
 			services.AddEntityFramework()
 				.AddDbContext<MariosSpecialtyStoreContext>(options =>
 				 options.UseMySql(Configuration["ConnectionStrings:DefaultConnection"]));
+
+			services.AddIdentity<ApplicationUser, IdentityRole>()
+				.AddEntityFrameworkStores<MariosSpecialtyStoreContext>()
+				.AddDefaultTokenProviders();
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -53,6 +58,7 @@ namespace MariosSpecialtyStore
 				app.UseExceptionHandler("/Home/Error");
 			}
 
+            app.UseIdentity();
 			app.UseStaticFiles();
 
 			app.UseMvc(routes =>

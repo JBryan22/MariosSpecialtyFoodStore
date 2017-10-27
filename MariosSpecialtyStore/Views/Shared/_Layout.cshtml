@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@using System.Security.Claims
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -21,6 +23,18 @@
 				<div class="col-md-8">
                     <ul>
                         <li><a asp-controller="Products" asp-action="Index">Products</a></li>
+
+						@if (User.Identity.IsAuthenticated)
+						{
+                            <li>@User.Identity.Name</li>
+                            <li><a asp-controller="Account" asp-action="LogOff">Log Out</a></li>
+						}
+                        else
+						{
+                            <li><a asp-controller="Account" asp-action="Register">Register</a></li>
+                            <li><a asp-controller="Account" asp-action="Login">Login</a></li>
+						}
+
 					</ul>
 				</div>
 			</div>

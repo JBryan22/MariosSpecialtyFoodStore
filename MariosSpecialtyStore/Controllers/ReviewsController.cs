@@ -8,9 +8,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MariosSpecialtyStore.Models;
 using MariosSpecialtyStore.Models.Repositories;
+using Microsoft.AspNetCore.Authorization;
 
 namespace MariosSpecialtyStore.Controllers
 {
+    [Authorize]
 	public class ReviewsController : Controller
 	{
 		private IReviewRepository reviewRepo;
@@ -27,11 +29,13 @@ namespace MariosSpecialtyStore.Controllers
 			}
 		}
 
+        [AllowAnonymous]
 		public IActionResult Index()
 		{
 			return View(reviewRepo.Reviews.ToList());
 		}
 
+        [AllowAnonymous]
 		public IActionResult Details(int id)
 		{
 			var thisReview = reviewRepo.Reviews.FirstOrDefault(reviews => reviews.ReviewId == id);
@@ -45,6 +49,7 @@ namespace MariosSpecialtyStore.Controllers
 		}
 
 		[HttpPost]
+        [AllowAnonymous]
 		public IActionResult Create(Review review)
 		{
             if (ModelState.IsValid)

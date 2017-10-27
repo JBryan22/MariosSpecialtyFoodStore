@@ -10,9 +10,11 @@ using MariosSpecialtyStore.Models;
 using MariosSpecialtyStore.Models.Repositories;
 using Microsoft.AspNetCore.Http;
 using System.IO;
+using Microsoft.AspNetCore.Authorization;
 
 namespace MariosSpecialtyStore.Controllers
 {
+    [Authorize]
     public class ProductsController : Controller
     {
         private IProductRepository productRepo;
@@ -29,11 +31,13 @@ namespace MariosSpecialtyStore.Controllers
             }
         }
 
+        [AllowAnonymous]
         public IActionResult Index()
         {
             return View(productRepo.Products.Include(products => products.Reviews).ToList());
         }
 
+        [AllowAnonymous]
         public IActionResult Details(int id)
         {
             var thisProduct = productRepo.Products.Include(p => p.Reviews).FirstOrDefault(products => products.ProductId == id);
