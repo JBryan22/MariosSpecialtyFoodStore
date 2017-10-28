@@ -181,3 +181,9 @@ footer {
 .form-control {
     border-radius:0;
 }
+
+.admin-button {
+    background-color: #fcfcfc;
+    border: 1px solid black;
+    color:black;
+}

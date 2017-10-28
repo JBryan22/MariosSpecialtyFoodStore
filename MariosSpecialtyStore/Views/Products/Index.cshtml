@@ -6,18 +6,18 @@
     ViewData["Title"] = "Index";
 }
 
-<h2>Product List</h2>
 
-@if (User.Identity.IsAuthenticated)
+
+
+
+<div class="product-list">
+    <h3 class="home-product-header">Product List</h3>
+	@if (User.Identity.IsAuthenticated)
 {
     <p>
         <a class="admin-button" asp-action="Create">Create New</a>
     </p>
 }
-
-
-<div class="product-list">
-    <h3 class="home-product-header">Product List</h3>
     <div class="container">
         <div class="row">
             @foreach (var product in Model)
@@ -38,7 +38,7 @@
                         <h4 class="card-title">@Html.DisplayFor(m => product.Name)</h4>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         <p class="card-text">Product of @Html.DisplayFor(m => product.Country)</p>
-                        <p class="card-text">@Html.DisplayFor(m => product.Cost)</p>
+                        <p class="card-text">$@product.Cost</p>
                         <a asp-controller="Products" asp-action="Details" asp-route-id="@product.ProductId" class="anchor"><p class="card-text">See Details</p></a>
                         <div class="card-footer">
                             <small class="text-muted">Average Rating: @product.AverageRating() </small>

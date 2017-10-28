@@ -8,9 +8,10 @@ using MariosSpecialtyStore.Models;
 namespace MariosSpecialtyStore.Migrations
 {
     [DbContext(typeof(MariosSpecialtyStoreContext))]
-    partial class MariosSpecialtyStoreContextModelSnapshot : ModelSnapshot
+    [Migration("20171027234434_loggedInBool")]
+    partial class loggedInBool
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.1.2");
