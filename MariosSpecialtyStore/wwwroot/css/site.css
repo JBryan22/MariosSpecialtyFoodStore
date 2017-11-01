@@ -94,7 +94,11 @@ header {
     max-width: 350px;
 }
 
-.card img {
+.list-image {
+    max-width: 350px;
+}
+
+.home-card img {
     max-height:350px;
 
 }

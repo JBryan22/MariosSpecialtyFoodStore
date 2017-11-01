@@ -15,7 +15,7 @@
             {
                 <div class="col-md-4">
                     <div class="card home-card">
-                        <img class="card-img-top" src="~/images/ImagePlaceholder.png" alt="Card image cap">
+                        <img class="list-image" src="~/images/ImagePlaceholder.png" alt="Card image cap">
                         <h4 class="card-title">@Html.DisplayFor(m => product.Name)</h4>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         <p class="card-text">Product of @Html.DisplayFor(m => product.Country)</p>
@@ -43,11 +43,11 @@
                         {
                             String img64 = Convert.ToBase64String(product.ProductImg);
                             String img64Url = string.Format("data:image/" + product.ProductImg + ";base64,{0}", img64); //imagetype can be e.g. gif, jpeg, png etc.
-                            <img class="detail-image" src="@img64Url" />
+                            <img class="list-image" src="@img64Url" />
                         }
                         else
                         {
-                            <img class="detail-image" src="~/images/ImagePlaceholder.png" alt="product image"> 
+                            <img class="list-image" src="~/images/ImagePlaceholder.png" alt="product image"> 
                         }
                         <h4 class="card-title">@product.Name</h4>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
